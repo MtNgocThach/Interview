@@ -9,7 +9,7 @@ var socket = require("socket.io")(server);
 server.listen(3000);
 
 socket.on("connection", function(soc){
-    console.log(111);
+    console.log(222);
 });
 
 app.get("/", function(req, res){

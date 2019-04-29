@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000");
+var socket = io("https://realtimethach1.herokuapp.com");
 var name_chat = '';
 $(document).ready(function () {
     $("#loginForm").show();
@@ -21,7 +21,7 @@ $(document).ready(function () {
 socket.on("login_success", function (data) {
     $("#current_user").html(data);
     name_chat = data;
-    $("#form-inline").hide();
+    $("#loginForm").hide();
     $("#chatForm").show();
 });
 
@@ -38,7 +38,7 @@ socket.on("server_list_user", function (data) {
 
 socket.on("server_send_chat", function (data) {
     if (name_chat == data.user) {
-        $("#main_chat").append("<div class='w-100 text-right pl-2 pr-2 chat_contain text-white'>" + data.user + ": " + data.mess + "</div>");
+        $("#main_chat").append("<div class='w-100 text-right pl-2 pr-2 chat_contain my_chat'>" + data.mess + "</div>");
     } else {
         $("#main_chat").append("<div class='w-100 text-left pl-2 pr-2 chat_contain'>" + data.user + ": " + data.mess + "</div>");
     }

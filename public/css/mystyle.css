@@ -4,3 +4,35 @@
 .chat_contain {
     word-wrap: break-word;
 }
+#current_user {
+    text-decoration: underline;
+}
+.list_user {
+    background-color: #b3ffb3;
+}
+#main_chat {
+    background-color: #ccd9ff;
+}
+
+.my_chat {
+    color: #4d4dff
+}
+
+textarea {
+	box-sizing:border-box;
+    display:block;
+    resize: none;
+	line-height:1.5;
+	padding:15px 15px 30px;
+	border-radius:3px;
+	border:1px solid #F7E98D;
+	font:13px Tahoma, cursive;
+	transition:box-shadow 0.5s ease;
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+	font-smoothing:subpixel-antialiased;
+	background:linear-gradient(#F9EFAF, #F7E98D);
+	background:-o-linear-gradient(#F9EFAF, #F7E98D);
+	background:-ms-linear-gradient(#F9EFAF, #F7E98D);
+	background:-moz-linear-gradient(#F9EFAF, #F7E98D);
+	background:-webkit-linear-gradient(#F9EFAF, #F7E98D);
+}

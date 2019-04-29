@@ -1,15 +1,23 @@
 .container {
     background-color: #f0f5f5;
 }
+
 .chat_contain {
     word-wrap: break-word;
 }
+
 #current_user {
     text-decoration: underline;
 }
+
+.list_user, #main_chat {
+	border-radius: 5px;
+}
+
 .list_user {
     background-color: #b3ffb3;
 }
+
 #main_chat {
     background-color: #ccd9ff;
 }
